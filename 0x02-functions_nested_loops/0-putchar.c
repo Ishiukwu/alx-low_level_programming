@@ -1,18 +1,17 @@
 #include "main.h"
-
 /** main - prints out _putchar
  * return - always 0(Success)
  */
+
 int main(void)
 {
-_putchar("-")
-_putchar("p")
-_putchar("u")
-_putchar("t")
-_putchar("c")
-_putchar("h")
-_putchar("a")
-_putchar("r")
-_putchar("\n")
-return(0)
+	char *pi = "_putchar";
+
+	while (*pi)
+	{
+		_putchar(*pi);
+		pi++;
+	}
+	_putchar('\n');
+	return (0);
 }
